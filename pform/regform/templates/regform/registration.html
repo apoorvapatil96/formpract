@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <titl>Registration Form</titl></title>
+</head>
+<body>
+<div class ="container">
+    <div class="row">
+        <form method="POST">
+            <h4>Please enter your details</h4>
+            {% csrf_token %}
+            {{rform}}
+            <input type="submit" value="Signup" class="btn btn-success">
+             <input type="reset" value="clear" class="btn btn-danger">
+
+        </form>
+    </div>
+</div>
+</body>
+</html>
